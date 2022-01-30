@@ -1,10 +1,18 @@
-import styled from 'styled-components';
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+import Head from 'next/head';
+import Layout from '../components/Layout';
+import FirstComponent from '../components/FirstComponent';
+import SecondComponent from '../components/SecondComponent';
 
 export default function Home() {
-  return <Title>My page</Title>;
+  return (
+    <>
+      <Head>
+        <title>Welcome to my portfolio site!</title>
+      </Head>
+      <Layout>
+        <FirstComponent />
+        <SecondComponent />
+      </Layout>
+    </>
+  );
 }
