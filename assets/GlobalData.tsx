@@ -266,3 +266,21 @@ export const projectsSecondary = [
     demo: 'http://talkofthetownlanguages.com',
   },
 ];
+
+export const aboutHistory = [
+  'Working as a Web Applications Developer at OpenSymmetry, a global SPM company (2022)',
+  'Pioneering the Plutus Core language with Plutus Pioneer Program at IOHK, a blockchain company (2022)',
+  'Working as a Technology Manager a Dulles barber, a small business in Northern Virginia (2022)',
+  'Volunteering with Austin Hispanic Hackers, a technology group promoting diversity and inclusion (2022)',
+  'Worked as an associate full-stack software engineer at Tenavox, a startup in the commercial real estate industry (2019)',
+  'Worked as a core developer on a project for Lambda School Labs to build Refreshr (2019)',
+  'Led 5 other developers as scrummaster during Lambda School Build Week with Guidr (2019)',
+  'Worked as a freelancer with clients to develop web design sites: Derik Jones, VZ Suites, Sightsee With Me (2018)',
+  'Organized for a Free Code Camp local group (2018)',
+];
+
+export const aboutDescription = [
+  'A software engineer who loves to work with front-end, full-stack, and web technologies. A Lambda School alumnus from a fast-paced 7-month academy with focus on full-stack web development and computer science. Started coding in January 2017 when transitioned away from a full-time pharmacist role.',
+  "In my spare time, I enjoy traveling, outdoor activities, reading non-fiction books/tech articles, taking coding courses, and experimenting with new technologies and learning new features. I'm currently exploring the React and Blockchain ecosystems.",
+  "If you'd like to reach me, please send me a message on LinkedIn or email me in the Contact section.",
+];

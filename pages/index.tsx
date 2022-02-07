@@ -13,6 +13,7 @@ export default function Home() {
       <Layout>
         <Introduction />
         <Portfolio />
+        <About />
       </Layout>
     </>
   );
