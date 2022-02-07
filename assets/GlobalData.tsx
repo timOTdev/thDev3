@@ -100,41 +100,6 @@ export const links = {
   },
 };
 
-export const skills = {
-  frontEnd: [
-    'JavaScript',
-    'React',
-    'Redux',
-    'Next.js',
-    'GatsbyJS',
-    'Styled Components',
-    'Flexbox',
-    'Sass/CSS',
-    'HTML',
-  ],
-  backEnd: [
-    'Node.js/Express.js',
-    'RESTful Architecture/APIs',
-    'SQL/PostgreSQL',
-    'MongoDB',
-    'Netlify',
-    'Heroku',
-    'Python/Django',
-    'C',
-  ],
-  other: [
-    'Git/Github',
-    'Jest',
-    'Cypress',
-    'CircleCI',
-    'Yarn/NPM',
-    'Auth0',
-    'Jira',
-    'Vietnamese (fluent)',
-    'Spanish (basic)',
-  ],
-};
-
 export const projectsPrimary = [
   {
     name: 'Tenavox Admin',
@@ -284,3 +249,38 @@ export const aboutDescription = [
   "In my spare time, I enjoy traveling, outdoor activities, reading non-fiction books/tech articles, taking coding courses, and experimenting with new technologies and learning new features. I'm currently exploring the React and Blockchain ecosystems.",
   "If you'd like to reach me, please send me a message on LinkedIn or email me in the Contact section.",
 ];
+
+export const skills = {
+  frontEnd: [
+    'JavaScript',
+    'React',
+    'Redux',
+    'Next.js',
+    'GatsbyJS',
+    'Styled Components',
+    'Flexbox',
+    'Sass/CSS',
+    'HTML',
+  ],
+  backEnd: [
+    'Node.js/Express.js',
+    'RESTful Architecture/APIs',
+    'SQL/PostgreSQL',
+    'MongoDB',
+    'Netlify',
+    'Heroku',
+    'Python/Django',
+    'C',
+  ],
+  other: [
+    'Git/Github',
+    'Jest',
+    'Cypress',
+    'CircleCI',
+    'Yarn/NPM',
+    'Auth0',
+    'Jira',
+    'Vietnamese (fluent)',
+    'Spanish (basic)',
+  ],
+};
