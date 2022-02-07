@@ -4,6 +4,7 @@ import Introduction from '../components/Introduction';
 import Portfolio from '../components/Portfolio';
 import About from '../components/About';
 import Skills from '../components/Skills';
+import Contact from '../components/Contact';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Portfolio />
         <About />
         <Skills />
+        <Contact />
       </Layout>
     </>
   );
