@@ -1,15 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles = createGlobalStyle`
-  body {
-    background: ${({ theme }) => theme.backgroundColor};
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-    font-size: 24px;
-    box-sizing: border-box;
-  }
-`;
+// https://jsramblings.com/how-to-use-media-queries-with-styled-components/
+// @media (min-width: 320px) {}
+// @media (min-width: 375px) {}
+// @media (min-width: 425px) {}
+// @media (min-width: 768px) {}
+// @media (min-width: 1024px) {}
+// @media (min-width: 1440px) {}
+// @media (min-width: 2560px) {}
 
 export const themeColors = {
   slate: '#1d1e22',
@@ -25,8 +23,7 @@ export const themeColors = {
 
 export const darkTheme = {
   textColor: `${themeColors.white}`,
-  // backgroundColor: themeColors.slate,
-  backgroundColor: 'red',
+  backgroundColor: themeColors.slate,
   yBorderColor: `2px solid ${themeColors.gray}`,
   xBorderColor: `2px solid ${themeColors.slate}`,
   separatorColor: `3px solid ${themeColors.white}`,
@@ -52,3 +49,88 @@ export const lightTheme = {
   underlineColor: themeColors.sky,
   socialIconColor: themeColors.slate,
 };
+
+export const GlobalStyles = createGlobalStyle`
+  body {
+    background: ${({ theme }) => theme.backgroundColor};
+    color: ${({ theme }) => theme.textColor};
+    font-size: 62.5%;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    @media (min-width: 320px) {
+      font-size: 1.8rem;
+    }
+  }
+  h2 {
+    @media (min-width: 320px) {
+      font-size: 1.7rem;
+    }
+  }
+  h3 {
+    @media (min-width: 320px) {
+      font-size: 1.6rem;
+    }
+  }
+  h4 {
+    @media (min-width: 320px) {
+      font-size: 1.5rem;
+    }
+  }
+  h5 {
+    @media (min-width: 320px) {
+      font-size: 1.4rem;
+    }
+  }
+  h6 {
+    @media (min-width: 320px) {
+      font-size: 1.3rem;
+    }
+  }
+  p {
+    @media (min-width: 320px) {
+      font-size: 1.2rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: ${({ theme }) => theme.textColor};
+    @media (min-width: 320px) {
+      font-size: 1.4rem;
+    }
+    @media (min-width: 768px) {
+      font-size: 1.6rem;
+    }
+    @media (min-width: 1440px) {
+      font-size: 1.8rem;
+    }
+    @media (min-width: 2560px) {
+      font-size: 2.4rem;
+    }
+  }
+  svg {
+    @media (min-width: 320px) {
+      height: 30px;
+      width: 30px;
+    }
+    @media (min-width: 768px) {
+      height: 40px;
+      width: 40px;
+    }
+    @media (min-width: 1440px) {
+      height: 50px;
+      width: 50px;
+    }
+    @media (min-width: 2560px) {
+      height: 60px;
+      width: 60px;
+    }
+  }
+`;
