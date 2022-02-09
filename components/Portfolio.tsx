@@ -1,20 +1,35 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import { ProjectsPrimary } from './Portfolio/ProjectsPrimary';
 import { ProjectsSecondary } from './Portfolio/ProjectsSecondary';
 
-const P1 = styled.p`
-  font-weight: 700;
-  color: ${({ theme }) => theme.textColor};
+const Section = styled.section`
+  margin: 0 auto;
+  @media (min-width: 320px) {
+    width: 100%;
+  }
+`;
+const Title = styled.h1`
+  text-align: left;
 `;
 
 export default function Portfolio(props: any) {
+  const [showSecondary, setShowSecondary] = useState(false);
   return (
-    <section>
-      <P1>Portfolio</P1>
+    <Section>
+      <Title>Portfolio</Title>
       <hr />
       <ProjectsPrimary />
-      <ProjectsSecondary />
-      <button>More projects</button>
-    </section>
+      {showSecondary ? (
+        <button onClick={() => setShowSecondary((prevCheck) => !prevCheck)}>
+          Hide projects
+        </button>
+      ) : (
+        <button onClick={() => setShowSecondary((prevCheck) => !prevCheck)}>
+          More projects
+        </button>
+      )}
+      {showSecondary ? <ProjectsSecondary /> : ''}
+    </Section>
   );
 }

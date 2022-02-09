@@ -1,13 +1,17 @@
+import styled from 'styled-components';
 import ProjectsTemplate from './ProjectsTemplate';
 import { projectsPrimary } from '../../assets/GlobalData';
 
+const ProjectsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+`;
+
 export const ProjectsPrimary = () => (
-  <>
-    <h1>ProjectsPrimary</h1>
-    <div>
-      {projectsPrimary.map((project) => {
-        return <ProjectsTemplate key={project.name} project={project} />;
-      })}
-    </div>
-  </>
+  <ProjectsContainer>
+    {projectsPrimary.map((project, index) => {
+      return <ProjectsTemplate key={index} project={project} />;
+    })}
+  </ProjectsContainer>
 );

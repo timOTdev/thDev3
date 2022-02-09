@@ -125,8 +125,8 @@ export const GlobalStyles = createGlobalStyle`
       width: 40px;
     }
     @media (min-width: 1440px) {
-      height: 50px;
-      width: 50px;
+      height: 40px;
+      width: 40px;
     }
     @media (min-width: 2560px) {
       height: 60px;
