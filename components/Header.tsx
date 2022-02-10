@@ -61,21 +61,25 @@ const Header = () => (
         {(data) =>
           data.theme == 'dark' ? (
             <Link href='/'>
-              <Image
-                priority
-                src='/images/logo_dark.png'
-                height={200}
-                width={200}
-              />
+              <a>
+                <Image
+                  priority
+                  src='/images/logo_dark.png'
+                  height={200}
+                  width={200}
+                />
+              </a>
             </Link>
           ) : (
             <Link href='/'>
-              <Image
-                priority
-                src='/images/logo_light.png'
-                height={200}
-                width={200}
-              />
+              <a>
+                <Image
+                  priority
+                  src='/images/logo_light.png'
+                  height={200}
+                  width={200}
+                />
+              </a>
             </Link>
           )
         }
