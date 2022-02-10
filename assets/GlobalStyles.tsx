@@ -91,7 +91,7 @@ export const GlobalStyles = createGlobalStyle`
       font-size: 1.3rem;
     }
   }
-  p {
+  p, th, td {
     @media (min-width: 320px) {
       font-size: 1.2rem;
     }

@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Introduction from '../components/Introduction';
-import Portfolio from '../components/Portfolio';
-import About from '../components/About';
 import Skills from '../components/Skills';
+import Portfolio from '../components/Portfolio';
+import Career from '../components/Career';
 import Blog from '../components/Blog';
 import Contact from '../components/Contact';
 
-export default function Home({ props: any }) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -15,9 +15,9 @@ export default function Home({ props: any }) {
       </Head>
       <Layout>
         <Introduction />
-        <Portfolio />
-        <About />
         <Skills />
+        <Portfolio />
+        <Career />
         <Blog />
         <Contact />
       </Layout>
