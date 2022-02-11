@@ -6,8 +6,22 @@ import Portfolio from '../components/Portfolio';
 import Career from '../components/Career';
 import Blog from '../components/Blog';
 import Contact from '../components/Contact';
+import { getSortedPostsData } from '../assets/posts';
 
-export default function Home() {
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+}
+
+export default function Home({
+  allPostsData,
+}: {
+  allPostsData: Array<{ id: string; date: string; title: string }>;
+}) {
   return (
     <>
       <Head>
@@ -18,7 +32,7 @@ export default function Home() {
         <Skills />
         <Portfolio />
         <Career />
-        <Blog />
+        <Blog allPostsData={allPostsData} />
         <Contact />
       </Layout>
     </>
