@@ -1,10 +1,8 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 import Image from 'next/image';
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import Socials from './shared/Socials';
 import { links } from '../assets/GlobalData';
-import GlobalContext from '../assets/GlobalContext';
 
 const Section = styled.section`
   width: 90%;
@@ -37,48 +35,55 @@ const Navigation = styled.div`
   }
 `;
 
-export default () => (
-  <Section>
-    <Brand>
-      <GlobalContext.Consumer>
-        {(data) =>
-          data.theme == 'dark' ? (
-            <Link href='/'>
-              <a>
-                <Image
-                  priority
-                  src='/images/logo_dark.png'
-                  height={200}
-                  width={200}
-                />
-              </a>
-            </Link>
-          ) : (
-            <Link href='/'>
-              <a>
-                <Image
-                  priority
-                  src='/images/logo_light.png'
-                  height={200}
-                  width={200}
-                />
-              </a>
-            </Link>
-          )
-        }
-      </GlobalContext.Consumer>
-    </Brand>
+interface PropTypes {
+  theme: string;
+  toggleTheme: React.Dispatch<React.SetStateAction<string>>;
+}
 
-    <Navigation>
-      <Link href='#portfolio'>Portfolio</Link>
-      <Link href='#career'>Career</Link>
-      <Link href='#blog'>Blog</Link>
-      <a href={links.resume.url} target='_blank' rel='noopener noreferrer'>
-        Resume
-      </a>
-      <Link href='#contact'>Contact</Link>
-    </Navigation>
+export default function Header({ theme, toggleTheme }: PropTypes) {
+  return (
+    <Section>
+      <Brand>
+        {theme == 'dark' ? (
+          <Link href='/'>
+            <a>
+              <Image
+                priority
+                src='/images/logo_dark.png'
+                height={200}
+                width={200}
+              />
+            </a>
+          </Link>
+        ) : (
+          <Link href='/'>
+            <a>
+              <Image
+                priority
+                src='/images/logo_light.png'
+                height={200}
+                width={200}
+              />
+            </a>
+          </Link>
+        )}
+      </Brand>
 
-    <Socials />
-  </Section>
-);
+      <Navigation>
+        <Link href='#portfolio'>Portfolio</Link>
+        <Link href='#career'>Career</Link>
+        <Link href='#blog'>Blog</Link>
+        <a href={links.resume.url} target='_blank' rel='noopener noreferrer'>
+          Resume
+        </a>
+        <Link href='#contact'>Contact</Link>
+      </Navigation>
+
+      <Socials />
+
+      <button onClick={() => toggleTheme(theme)}>
+        {theme == 'dark' ? <span>☀️</span> : <span>🌙</span>}
+      </button>
+    </Section>
+  );
+}

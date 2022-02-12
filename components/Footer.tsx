@@ -13,11 +13,7 @@ const Section = styled.section`
 const FooterContainer = styled.div`
   display: flex;
   align-items: center;
-  width: 90%;
   margin: 1rem auto;
-  * {
-    flex: 1 1 33.3%;
-  }
   @media (min-width: 320px) {
     flex-direction: column;
   }
@@ -25,14 +21,29 @@ const FooterContainer = styled.div`
     flex-direction: row;
   }
 `;
-const Arrow = styled.a`
-  margin: 1rem;
-  padding: 1rem;
-  border-top: ${(props) => props.theme.xBorderColor};
-  :hover {
-    cursor: pointer;
-    border-top: ${({ theme }) => theme.yBorderColor};
+const Top = styled.div`
+  flex: 1 1 25%;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
   }
+  svg {
+    padding-top: 1rem;
+    border-top: ${(props) => props.theme.xBorderColor};
+    :hover {
+      cursor: pointer;
+      border-top: ${({ theme }) => theme.yBorderColor};
+    }
+  }
+`;
+const Quote = styled.div`
+  flex: 1 1 50%;
+`;
+const Related = styled.div`
+  flex: 1 1 25%;
 `;
 
 export default () => (
@@ -40,15 +51,15 @@ export default () => (
     <hr />
     <hr />
     <FooterContainer>
-      <div>
+      <Top>
         <Link href='#header'>
-          <Arrow>
+          <a>
             <FaArrowAltCircleUp />
-          </Arrow>
+          </a>
         </Link>
         <p>Back to the top</p>
-      </div>
-      <div>
+      </Top>
+      <Quote>
         <p>
           "Excellence is an art won by training and habituation. We do not act
           rightly because we have virtue or excellence, but we rather have those
@@ -56,11 +67,11 @@ export default () => (
           Excellence, then, is not an act but a habit."
         </p>
         <p>-Aristotle</p>
-      </div>
-      <div>
+      </Quote>
+      <Related>
         <Socials />
         <p>Timothy Hoang © {new Date().getFullYear()}</p>
-      </div>
+      </Related>
     </FooterContainer>
   </Section>
 );

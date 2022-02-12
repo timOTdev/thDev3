@@ -4,10 +4,9 @@ import styled from 'styled-components';
 
 const Socials = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex: 1 1 30%;
   a {
-    margin: 1rem;
     padding: 1rem;
     border-bottom: ${(props) => props.theme.xBorderColor};
     :hover {
