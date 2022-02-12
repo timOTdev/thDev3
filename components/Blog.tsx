@@ -14,26 +14,38 @@ const Section = styled.section`
   }
 `;
 
-export default ({
-  allPostsData,
-}: {
+interface allPostsDataTypes {
   allPostsData: Array<{ id: string; date: string; title: string }>;
-}) => (
-  <Section>
-    <h1>Blog</h1>
-    <hr />
-    <ul>
-      {allPostsData.map(({ id, date, title }) => (
-        <li key={id}>
-          <Link href={`/posts/${id}`}>
-            <a>{title}</a>
-          </Link>
-          <br />
-          <p>
-            <Date dateString={date} />
-          </p>
-        </li>
-      ))}
-    </ul>
-  </Section>
-);
+}
+
+export default function Blog({ allPostsData }: allPostsDataTypes) {
+  return (
+    <Section>
+      <h1>Blog</h1>
+      <hr />
+      <ul>
+        {allPostsData.map(
+          ({
+            id,
+            date,
+            title,
+          }: {
+            id: string;
+            date: string;
+            title: string;
+          }) => (
+            <li key={id}>
+              <Link href={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
+              <br />
+              <p>
+                <Date dateString={date} />
+              </p>
+            </li>
+          )
+        )}
+      </ul>
+    </Section>
+  );
+}

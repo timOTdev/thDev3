@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Layout from '../components/shared/Layout';
 import Introduction from '../components/Introduction';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
@@ -7,6 +6,7 @@ import Career from '../components/Career';
 import Blog from '../components/Blog';
 import Contact from '../components/Contact';
 import { getSortedPostsData } from '../assets/posts';
+import Layout from '../components/shared/Layout';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -17,22 +17,24 @@ export async function getStaticProps() {
   };
 }
 
-export default function Home({
-  allPostsData,
-}: {
+interface PropTypes {
+  theme: string;
   allPostsData: Array<{ id: string; date: string; title: string }>;
-}) {
+  toggleTheme: React.Dispatch<React.SetStateAction<string>>;
+}
+
+export default function Home(props: PropTypes) {
   return (
     <>
       <Head>
         <title>Timothy Hoang | Software Engineer</title>
       </Head>
-      <Layout>
+      <Layout {...props}>
         <Introduction />
         <Skills />
         <Portfolio />
         <Career />
-        <Blog allPostsData={allPostsData} />
+        <Blog allPostsData={props.allPostsData} />
         <Contact />
       </Layout>
     </>

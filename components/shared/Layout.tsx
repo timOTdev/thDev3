@@ -10,10 +10,19 @@ const Section = styled.section`
   }
 `;
 
-export default ({ children }: { children: React.ReactNode }) => (
-  <>
-    <Header />
-    <Section>{children}</Section>
-    <Footer />
-  </>
-);
+interface PropTypes {
+  theme: string;
+  allPostsData: Array<{ id: string; date: string; title: string }>;
+  toggleTheme: React.Dispatch<React.SetStateAction<string>>;
+  children: React.ReactNode;
+}
+
+export default function Layout(props: PropTypes) {
+  return (
+    <>
+      <Header {...props} />
+      <Section>{props.children}</Section>
+      <Footer />
+    </>
+  );
+}
