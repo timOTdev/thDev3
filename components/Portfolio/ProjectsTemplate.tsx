@@ -61,11 +61,10 @@ const IconsContainer = styled.div`
   a {
     margin: 0.5rem;
     padding: 0.5rem;
-    border-left: ${({ theme }) => theme.xBorderColor};
-    border-right: ${({ theme }) => theme.xBorderColor};
+    border-bottom: ${(props) => props.theme.xBorderColor};
     :hover {
-      border-left: ${(props) => props.theme.yBorderColor};
-      border-right: ${(props) => props.theme.yBorderColor};
+      cursor: pointer;
+      border-bottom: ${({ theme }) => theme.yBorderColor};
     }
   }
 `;

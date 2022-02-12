@@ -5,22 +5,18 @@ import styled from 'styled-components';
 const Socials = styled.div`
   display: flex;
   justify-content: space-around;
+  flex: 1 1 30%;
   a {
     margin: 1rem;
     padding: 1rem;
-    border-left: ${({ theme }) => theme.xBorderColor};
-    border-right: ${({ theme }) => theme.xBorderColor};
+    border-bottom: ${(props) => props.theme.xBorderColor};
     :hover {
-      border-left: ${(props) => props.theme.yBorderColor};
-      border-right: ${(props) => props.theme.yBorderColor};
+      border-bottom: ${({ theme }) => theme.yBorderColor};
     }
   }
   svg {
     width: 30px;
     height: 30px;
-  }
-  * {
-    flex: 1 1 33.3%;
   }
 `;
 

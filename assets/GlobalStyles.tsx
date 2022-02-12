@@ -26,8 +26,8 @@ export const themeColors = {
 export const darkTheme = {
   textColor: `${themeColors.white}`,
   backgroundColor: `${themeColors.darkslate}`,
+  xBorderColor: `2px solid ${themeColors.darkslate}`,
   yBorderColor: `2px solid ${themeColors.gray}`,
-  xBorderColor: `2px solid ${themeColors.slate}`,
   separatorColor: `3px solid ${themeColors.white}`,
   imageShadow: `1px 1px 5px ${themeColors.gray}`,
   buttonShadow: `1px 1px 5px ${themeColors.teal}`,

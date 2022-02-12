@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import { links } from '../assets/GlobalData';
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import styled from 'styled-components';
 import Image from 'next/image';
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import Socials from './shared/Socials';
+import { links } from '../assets/GlobalData';
 import GlobalContext from '../assets/GlobalContext';
 
 const Section = styled.section`
@@ -18,39 +19,19 @@ const Brand = styled.div`
   flex: 1 1 20%;
 `;
 const Navigation = styled.div`
-  flex: 1 1 50%;
+  flex: 1 1 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   a {
-    margin: 0.3rem;
-    padding: 0.5rem;
-    border-bottom: ${({ theme }) => theme.yBorderColor};
-    border-left: ${({ theme }) => theme.xBorderColor};
-    border-right: ${({ theme }) => theme.xBorderColor};
+    padding: 1rem;
+    border-bottom: ${(props) => props.theme.xBorderColor};
     :hover {
-      border-bottom: ${(props) => props.theme.xBorderColor};
-      border-left: ${(props) => props.theme.yBorderColor};
-      border-right: ${(props) => props.theme.yBorderColor};
+      border-bottom: ${({ theme }) => theme.yBorderColor};
     }
   }
   @media (min-width: 768px) {
     flex-direction: row;
-  }
-`;
-const Socials = styled.div`
-  flex: 1 1 30%;
-  display: flex;
-  justify-content: space-around;
-  a {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    border-left: ${({ theme }) => theme.xBorderColor};
-    border-right: ${({ theme }) => theme.xBorderColor};
-    :hover {
-      border-left: ${(props) => props.theme.yBorderColor};
-      border-right: ${(props) => props.theme.yBorderColor};
-    }
   }
 `;
 
@@ -96,16 +77,6 @@ export default () => (
       <Link href='#contact'>Contact</Link>
     </Navigation>
 
-    <Socials>
-      <a href={links.github.url} target='_blank' rel='noopener noreferrer'>
-        <FaGithub />
-      </a>
-      <a href={links.linkedIn.url} target='_blank' rel='noopener noreferrer'>
-        <FaLinkedinIn />
-      </a>
-      <a href={links.twitter.url} target='_blank' rel='noopener noreferrer'>
-        <FaTwitter />
-      </a>
-    </Socials>
+    <Socials />
   </Section>
 );
