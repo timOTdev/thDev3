@@ -10,43 +10,50 @@ const Section = styled.section`
   }
   form {
     text-align: center;
-    margin: 2% auto;
-    width: 60%;
+    margin: 2rem auto;
     border-radius: 5px;
     border: 2px solid ${(props) => props.theme.textColor};
     box-shadow: 0 0 5px gray;
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+    @media (min-width: 1440px) {
+      width: 50%;
+    }
+    @media (min-width: 1440px) {
+      width: 40%;
+    }
   }
   span {
     display: block;
   }
   input {
-    width: 60%;
-    font-size: 1.6rem;
-    padding: 1rem;
-    margin: 1rem;
     border-radius: 2px;
     font-family: 'Quicksand';
     &:focus {
       box-shadow: 0 0 20px ${(props) => props.theme.themeToggleButton};
     }
+    @media (min-width: 320px) {
+      width: 90%;
+      margin: 0.5rem 0;
+      padding: 0.3rem;
+    }
   }
   textarea {
-    width: 60%;
     height: 200px;
-    font-size: 1.6rem;
-    padding: 1rem;
-    margin: 1rem;
     border-radius: 2px;
     font-family: 'Quicksand';
     &:focus {
       box-shadow: 0 0 20px ${(props) => props.theme.themeToggleButton};
+    }
+    @media (min-width: 320px) {
+      width: 90%;
+      margin: 0.5rem 0;
+      padding: 0.3rem;
     }
   }
   button {
     display: block;
-    width: 20%;
-    font-size: 1.6rem;
-    padding: 1rem;
     margin: 1rem auto;
     border-radius: 5px;
     color: ${(props) => props.theme.themeToggleButton};
