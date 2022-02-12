@@ -7,6 +7,8 @@ import { links } from '../assets/GlobalData';
 import GlobalContext from '../assets/GlobalContext';
 
 const Section = styled.section`
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

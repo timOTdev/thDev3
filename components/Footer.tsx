@@ -3,13 +3,26 @@ import Socials from './shared/Socials';
 import { FaArrowAltCircleUp } from 'react-icons/fa';
 import Link from 'next/link';
 
+const Section = styled.section`
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: 2560px) {
+    width: 60%;
+  }
+`;
 const FooterContainer = styled.div`
   display: flex;
   align-items: center;
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
   * {
-    flex: 1 1 33%;
+    flex: 1 1 33.3%;
+  }
+  @media (min-width: 320px) {
+    flex-direction: column;
+  }
+  @media (min-width: 1024px) {
+    flex-direction: row;
   }
 `;
 const Arrow = styled.a`
@@ -23,9 +36,18 @@ const Arrow = styled.a`
 `;
 
 export default () => (
-  <section>
+  <Section>
+    <hr />
     <hr />
     <FooterContainer>
+      <div>
+        <Link href='#header'>
+          <Arrow>
+            <FaArrowAltCircleUp />
+          </Arrow>
+        </Link>
+        <p>Back to the top</p>
+      </div>
       <div>
         <p>
           "Excellence is an art won by training and habituation. We do not act
@@ -36,17 +58,9 @@ export default () => (
         <p>-Aristotle</p>
       </div>
       <div>
-        <Link href='#header'>
-          <Arrow>
-            <FaArrowAltCircleUp />
-          </Arrow>
-        </Link>
-        <p>Back to the top</p>
-      </div>
-      <div>
         <Socials />
         <p>Timothy Hoang © {new Date().getFullYear()}</p>
       </div>
     </FooterContainer>
-  </section>
+  </Section>
 );
