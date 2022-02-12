@@ -10,20 +10,22 @@ import { createGlobalStyle } from 'styled-components';
 // @media (min-width: 2560px) {}
 
 export const themeColors = {
-  slate: '#1d1e22',
-  gray: '#ababab',
   white: '#f5f5f5',
+  gray: '#ababab',
+  metallic: '#585858',
+  slate: '#252525',
+  darkslate: '#1c1f21',
+  obsidian: '#1d1c21',
   purple: '#3333ff',
   orange: '#ffcc00',
   teal: '#8bd8bd',
   forest: '#295f2d',
   sky: '#8aaae5',
-  metallic: '#585858',
 };
 
 export const darkTheme = {
   textColor: `${themeColors.white}`,
-  backgroundColor: themeColors.slate,
+  backgroundColor: `${themeColors.darkslate}`,
   yBorderColor: `2px solid ${themeColors.gray}`,
   xBorderColor: `2px solid ${themeColors.slate}`,
   separatorColor: `3px solid ${themeColors.white}`,
@@ -56,7 +58,6 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.textColor};
     font-size: 62.5%;
     margin: 0 auto;
-    padding: 0 0.5rem;
     box-sizing: border-box;
     width: 100%;
     text-align: center;
