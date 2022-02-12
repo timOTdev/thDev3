@@ -61,7 +61,7 @@ const Section = styled.section`
   }
 `;
 
-export default function Contact() {
+export default () => {
   const [formStatus, setFormStatus] = useState(false);
   const [query, setQuery] = useState({
     name: '',
@@ -146,4 +146,4 @@ export default function Contact() {
       </Section>
     );
   }
-}
+};

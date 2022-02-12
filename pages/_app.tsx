@@ -9,7 +9,7 @@ interface globalsInterface {
   setTheme: React.Dispatch<React.SetStateAction<string>>;
 }
 
-export default function App({ Component, pageProps }: AppProps) {
+export default ({ Component, pageProps }: AppProps) => {
   const [theme, setTheme] = useState('dark');
   const globals: globalsInterface = {
     theme,
@@ -25,4 +25,4 @@ export default function App({ Component, pageProps }: AppProps) {
       </>
     </GlobalContext.Provider>
   );
-}
+};

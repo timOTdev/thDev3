@@ -14,7 +14,7 @@ const Section = styled.section`
   }
 `;
 
-const Footer = (props: any) => (
+export default () => (
   <Section>
     <div>
       <p>
@@ -39,5 +39,3 @@ const Footer = (props: any) => (
     </div>
   </Section>
 );
-
-export default Footer;

@@ -8,10 +8,10 @@ const ProjectsContainer = styled.div`
   justify-content: space-evenly;
 `;
 
-export const ProjectsPrimary = () => (
+export default () => (
   <ProjectsContainer>
-    {projectsPrimary.map((project, index) => {
-      return <ProjectsTemplate key={index} project={project} />;
-    })}
+    {projectsPrimary.map((project, index) => (
+      <ProjectsTemplate key={index} project={project} />
+    ))}
   </ProjectsContainer>
 );

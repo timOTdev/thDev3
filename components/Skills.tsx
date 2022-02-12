@@ -27,13 +27,11 @@ export default () => (
   </>
 );
 
-function generateSkillColumn(title: string, skills: Array<string>) {
-  return (
-    <div>
-      <h3>{title}</h3>
-      {skills.map((skill, index) => (
-        <p key={index}>{skill}</p>
-      ))}
-    </div>
-  );
-}
+const generateSkillColumn = (title: string, skills: Array<string>) => (
+  <div>
+    <h3>{title}</h3>
+    {skills.map((skill, index) => (
+      <p key={index}>{skill}</p>
+    ))}
+  </div>
+);

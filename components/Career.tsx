@@ -41,28 +41,22 @@ export default () => (
   </Section>
 );
 
-function generateTimeline() {
-  return timeline.years.map((item, index) => {
-    return (
-      <tr key={index}>
-        <th>{item}</th>
-        <td>{timeline.experiences[index]}</td>
-      </tr>
-    );
-  });
-}
+const generateTimeline = () =>
+  timeline.years.map((item, index) => (
+    <tr key={index}>
+      <th>{item}</th>
+      <td>{timeline.experiences[index]}</td>
+    </tr>
+  ));
 
-const generateAccolades = () => {
-  return accolades.map((accolade, index) => {
-    return (
-      <a
-        key={index}
-        href={accolade.url}
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        <button>{accolade.name}</button>
-      </a>
-    );
-  });
-};
+const generateAccolades = () =>
+  accolades.map((accolade, index) => (
+    <a
+      key={index}
+      href={accolade.url}
+      target='_blank'
+      rel='noopener noreferrer'
+    >
+      <button>{accolade.name}</button>
+    </a>
+  ));

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-import { ProjectsPrimary } from './Portfolio/ProjectsPrimary';
-import { ProjectsSecondary } from './Portfolio/ProjectsSecondary';
+import ProjectsPrimary from './Portfolio/ProjectsPrimary';
+import ProjectsSecondary from './Portfolio/ProjectsSecondary';
 
 const Section = styled.section`
   margin: 0 auto;
@@ -13,7 +13,7 @@ const Title = styled.h1`
   text-align: left;
 `;
 
-export default function Portfolio(props: any) {
+export default () => {
   const [showSecondary, setShowSecondary] = useState(false);
   return (
     <Section>
@@ -32,4 +32,4 @@ export default function Portfolio(props: any) {
       {showSecondary ? <ProjectsSecondary /> : ''}
     </Section>
   );
-}
+};

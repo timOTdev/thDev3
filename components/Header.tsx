@@ -54,7 +54,7 @@ const Socials = styled.div`
   }
 `;
 
-const Header = () => (
+export default () => (
   <Section>
     <Brand>
       <GlobalContext.Consumer>
@@ -109,5 +109,3 @@ const Header = () => (
     </Socials>
   </Section>
 );
-
-export default Header;

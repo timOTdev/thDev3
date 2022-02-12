@@ -70,7 +70,18 @@ const IconsContainer = styled.div`
   }
 `;
 
-export default ({ project }: any) => (
+export default ({
+  project,
+}: {
+  project: {
+    name: string;
+    description: string;
+    preview: string;
+    demo: string;
+    video?: string;
+    github?: string;
+  };
+}) => (
   <Card>
     <a href={project.demo}>
       <ImageContainer>
