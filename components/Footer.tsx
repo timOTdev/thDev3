@@ -7,7 +7,7 @@ const Section = styled.section`
   width: 90%;
   margin: 0 auto;
   @media (min-width: 2560px) {
-    width: 60%;
+    width: 80%;
   }
 `;
 const FooterContainer = styled.div`
@@ -29,13 +29,17 @@ const Top = styled.div`
     align-items: center;
     margin: 1rem;
     padding: 1rem;
+    border-bottom: none;
+    :hover {
+      border-bottom: none;
+    }
   }
   svg {
     padding-top: 1rem;
-    border-top: ${(props) => props.theme.xBorderColor};
+    border-top: 2px solid ${({ theme }) => theme.backgroundColor};
     :hover {
       cursor: pointer;
-      border-top: ${({ theme }) => theme.yBorderColor};
+      border-top: 2px solid ${({ theme }) => theme.underlineColor};
     }
   }
 `;
@@ -48,7 +52,6 @@ const Related = styled.div`
 
 export default () => (
   <Section>
-    <hr />
     <hr />
     <FooterContainer>
       <Top>

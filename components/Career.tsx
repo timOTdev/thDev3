@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { timeline, accolades } from '../assets/GlobalData';
 
 const Section = styled.section`
-  h3 {
-    text-decoration: underline;
+  h2 {
+    text-align: left;
   }
 `;
 const Title = styled.h1`
@@ -30,7 +30,7 @@ const Accolades = styled.div`
 
 export default () => (
   <Section>
-    <Title>Career</Title>
+    <h2>Career</h2>
     <hr />
     <h3>Timeline</h3>
     <Timeline>

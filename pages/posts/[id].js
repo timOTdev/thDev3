@@ -18,10 +18,10 @@ export default ({ postData }) => (
     <Head>
       <title>{postData.title}</title>
     </Head>
-    <h1>{postData.title}</h1>
-    <p>
+    <h2>{postData.title}</h2>
+    <h6>
       <Date dateString={postData.date} />
-    </p>
+    </h6>
     <hr />
     <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     <hr />

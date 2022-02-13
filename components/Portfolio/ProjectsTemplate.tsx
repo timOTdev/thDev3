@@ -6,7 +6,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid white;
+  border: 2px solid ${({ theme }) => theme.textColor};
   border-radius: 3px;
   padding: 1rem;
   margin: 1rem;
@@ -28,10 +28,15 @@ const Card = styled.div`
     max-width: 28%;
     margin: 0.5rem;
   }
+  @media (min-width: 2568px) {
+    max-width: 28%;
+    margin: 0.5rem;
+  }
 `;
 const ImageContainer = styled.div`
   position: relative;
   margin: 0 auto;
+  box-shadow: ${({ theme }) => theme.shadowColor};
   * {
     border-radius: 3px;
   }
@@ -59,13 +64,7 @@ const IconsContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   a {
-    margin: 0.5rem;
     padding: 0.5rem;
-    border-bottom: ${(props) => props.theme.xBorderColor};
-    :hover {
-      cursor: pointer;
-      border-bottom: ${({ theme }) => theme.yBorderColor};
-    }
   }
 `;
 
@@ -87,7 +86,7 @@ export default ({
         <Image src={project.preview} layout='fill' />
       </ImageContainer>
     </a>
-    <h3>{project.name}</h3>
+    <h4>{project.name}</h4>
     <p>{project.description}</p>
     <IconsContainer>
       {project.demo ? (

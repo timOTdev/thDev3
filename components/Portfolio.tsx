@@ -5,19 +5,22 @@ import ProjectsSecondary from './Portfolio/ProjectsSecondary';
 
 const Section = styled.section`
   margin: 0 auto;
+  h2 {
+    text-align: left;
+  }
+  button {
+    margin: 3rem 0;
+  }
   @media (min-width: 320px) {
     width: 100%;
   }
-`;
-const Title = styled.h1`
-  text-align: left;
 `;
 
 export default () => {
   const [showSecondary, setShowSecondary] = useState(false);
   return (
     <Section>
-      <Title>Portfolio</Title>
+      <h2>Portfolio</h2>
       <hr />
       <ProjectsPrimary />
       {showSecondary ? (

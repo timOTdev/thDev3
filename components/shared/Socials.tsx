@@ -5,13 +5,9 @@ import styled from 'styled-components';
 const Socials = styled.div`
   display: flex;
   justify-content: center;
-  flex: 1 1 30%;
+  flex: 1 1 25%;
   a {
     padding: 1rem;
-    border-bottom: ${(props) => props.theme.xBorderColor};
-    :hover {
-      border-bottom: ${({ theme }) => theme.yBorderColor};
-    }
   }
   svg {
     width: 30px;

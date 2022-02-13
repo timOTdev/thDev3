@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section`
-  h1 {
+  h2 {
     text-align: left;
   }
   ul {
@@ -12,7 +12,7 @@ const Section = styled.section`
     text-align: center;
     margin: 2rem auto;
     border-radius: 5px;
-    border: 2px solid ${(props) => props.theme.textColor};
+    border: 2px solid ${({ theme }) => theme.underlineColor};
     box-shadow: 0 0 5px gray;
     @media (min-width: 768px) {
       width: 60%;
@@ -31,7 +31,8 @@ const Section = styled.section`
     border-radius: 2px;
     font-family: 'Quicksand';
     &:focus {
-      box-shadow: 0 0 20px ${(props) => props.theme.themeToggleButton};
+      outline: none;
+      box-shadow: 0 0 20px ${({ theme }) => theme.underlineColor};
     }
     @media (min-width: 320px) {
       width: 90%;
@@ -44,7 +45,8 @@ const Section = styled.section`
     border-radius: 2px;
     font-family: 'Quicksand';
     &:focus {
-      box-shadow: 0 0 20px ${(props) => props.theme.themeToggleButton};
+      outline: none;
+      box-shadow: 0 0 20px ${({ theme }) => theme.underlineColor};
     }
     @media (min-width: 320px) {
       width: 90%;
@@ -56,14 +58,14 @@ const Section = styled.section`
     display: block;
     margin: 1rem auto;
     border-radius: 5px;
-    color: ${(props) => props.theme.themeToggleButton};
-    background: ${(props) => props.theme.buttonBackground};
-    border: 2px solid ${(props) => props.theme.buttonBorder};
+    color: ${({ theme }) => theme.buttonBackground};
+    background: ${({ theme }) => theme.underlineColor};
+    border: 2px solid ${({ theme }) => theme.buttonBackground};
     &:hover {
       cursor: pointer;
-      color: ${(props) => props.theme.textColor};
-      background: ${(props) => props.theme.themeToggleButton};
-      border: 2px solid ${(props) => props.theme.textColor};
+      color: ${({ theme }) => theme.underlineColor};
+      background: ${({ theme }) => theme.buttonBackground};
+      border: 2px solid ${({ theme }) => theme.buttonBorder};
     }
   }
 `;
@@ -110,7 +112,7 @@ export default () => {
   } else {
     return (
       <Section>
-        <h1>Contact</h1>
+        <h2>Contact</h2>
         <hr />
         <form onSubmit={handleSubmit}>
           <div>

@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import { skills } from '../assets/GlobalData';
 
-const Title = styled.h1`
-  text-align: left;
+const Section = styled.section`
+  h2 {
+    text-align: left;
+  }
 `;
 const Skills = styled.div`
   display: flex;
@@ -16,15 +18,15 @@ const Skills = styled.div`
 `;
 
 export default () => (
-  <>
-    <Title>Skills</Title>
+  <Section>
+    <h2>Skills</h2>
     <hr />
     <Skills>
       {generateSkillColumn('Front-End', skills.frontEnd)}
       {generateSkillColumn('Back-End', skills.backEnd)}
       {generateSkillColumn('Other', skills.other)}
     </Skills>
-  </>
+  </Section>
 );
 
 const generateSkillColumn = (title: string, skills: Array<string>) => (

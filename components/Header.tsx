@@ -5,7 +5,6 @@ import Socials from './shared/Socials';
 import { links } from '../assets/GlobalData';
 
 const Section = styled.section`
-  width: 90%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -16,19 +15,16 @@ const Section = styled.section`
   }
 `;
 const Brand = styled.div`
-  flex: 1 1 20%;
+  flex: 1 1 25%;
 `;
 const Navigation = styled.div`
-  flex: 1 1 40%;
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   a {
     padding: 1rem;
-    border-bottom: ${(props) => props.theme.xBorderColor};
-    :hover {
-      border-bottom: ${({ theme }) => theme.yBorderColor};
-    }
   }
   @media (min-width: 768px) {
     flex-direction: row;
@@ -77,13 +73,13 @@ export default function Header({ theme, toggleTheme }: PropTypes) {
           Resume
         </a>
         <Link href='#contact'>Contact</Link>
+
+        <button onClick={() => toggleTheme(theme)}>
+          {theme == 'dark' ? <span>☀️</span> : <span>🌙</span>}
+        </button>
       </Navigation>
 
       <Socials />
-
-      <button onClick={() => toggleTheme(theme)}>
-        {theme == 'dark' ? <span>☀️</span> : <span>🌙</span>}
-      </button>
     </Section>
   );
 }

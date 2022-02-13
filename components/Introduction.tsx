@@ -15,6 +15,7 @@ const ImageContainer = styled.div`
   height: 300px;
   margin: 0 auto;
   img {
+    box-shadow: ${({ theme }) => theme.shadowColor};
     border-radius: 50%;
   }
 `;
@@ -30,8 +31,8 @@ const TextContainer = styled.div`
   @media (min-width: 768px) {
     max-width: 90%;
   }
-  @media (min-width: 768px) {
-    max-width: 50%;
+  @media (min-width: 2568px) {
+    max-width: 70%;
   }
 `;
 
@@ -42,7 +43,7 @@ export default () => (
     </ImageContainer>
     <HeaderContainer>
       <h1>Hello, I'm Tim.</h1>
-      <h2>I craft elegant software using clean code across the full-stack.</h2>
+      <h4>I craft elegant software using clean code across the full-stack.</h4>
     </HeaderContainer>
     <TextContainer>
       {introduction.map((text, index) => (

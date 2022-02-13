@@ -6,11 +6,12 @@ const Section = styled.section`
   ul {
     list-style-type: none;
   }
-  h1 {
+  h2 {
     text-align: left;
   }
   a {
-    border-bottom: ${({ theme }) => theme.yBorderColor};
+    font-size: 1.4rem;
+    border-bottom: 2px solid ${({ theme }) => theme.underlineColor};
   }
 `;
 
@@ -21,7 +22,7 @@ interface allPostsDataTypes {
 export default function Blog({ allPostsData }: allPostsDataTypes) {
   return (
     <Section>
-      <h1>Blog</h1>
+      <h2>Blog</h2>
       <hr />
       <ul>
         {allPostsData.map(
