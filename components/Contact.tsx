@@ -70,7 +70,7 @@ const Section = styled.section`
   }
 `;
 
-export default () => {
+export default function Contact() {
   const [formStatus, setFormStatus] = useState(false);
   const [query, setQuery] = useState({
     name: '',
@@ -155,4 +155,4 @@ export default () => {
       </Section>
     );
   }
-};
+}

@@ -15,11 +15,11 @@ const Section = styled.section`
   }
 `;
 
-interface allPostsDataTypes {
+interface AllPostsDataTypes {
   allPostsData: Array<{ id: string; date: string; title: string }>;
 }
 
-export default function Blog({ allPostsData }: allPostsDataTypes) {
+export default function Blog({ allPostsData }: AllPostsDataTypes) {
   return (
     <Section>
       <h2>Blog</h2>

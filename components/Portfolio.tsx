@@ -16,7 +16,7 @@ const Section = styled.section`
   }
 `;
 
-export default () => {
+export default function Portfolio() {
   const [showSecondary, setShowSecondary] = useState(false);
   return (
     <Section>
@@ -35,4 +35,4 @@ export default () => {
       {showSecondary ? <ProjectsSecondary /> : ''}
     </Section>
   );
-};
+}

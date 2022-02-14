@@ -8,10 +8,12 @@ const ProjectsContainer = styled.div`
   justify-content: space-evenly;
 `;
 
-export default () => (
-  <ProjectsContainer>
-    {projectsSecondary.map((project) => (
-      <ProjectsTemplate key={project.name} project={project} />
-    ))}
-  </ProjectsContainer>
-);
+export default function ProjectsSecondary() {
+  return (
+    <ProjectsContainer>
+      {projectsSecondary.map((project) => (
+        <ProjectsTemplate key={project.name} project={project} />
+      ))}
+    </ProjectsContainer>
+  );
+}

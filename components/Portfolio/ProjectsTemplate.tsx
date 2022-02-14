@@ -68,48 +68,52 @@ const IconsContainer = styled.div`
   }
 `;
 
-export default ({
+interface ProjectTypes {
+  name: string;
+  description: string;
+  preview: string;
+  demo: string;
+  video?: string;
+  github?: string;
+}
+
+export default function ProjectsTemplate({
   project,
 }: {
-  project: {
-    name: string;
-    description: string;
-    preview: string;
-    demo: string;
-    video?: string;
-    github?: string;
-  };
-}) => (
-  <Card>
-    <a href={project.demo}>
-      <ImageContainer>
-        <Image src={project.preview} layout='fill' />
-      </ImageContainer>
-    </a>
-    <h4>{project.name}</h4>
-    <p>{project.description}</p>
-    <IconsContainer>
-      {project.demo ? (
-        <a href={project.video} target='_blank'>
-          <FaLaptop />
-        </a>
-      ) : (
-        ''
-      )}
-      {project.video ? (
-        <a href={project.video} target='_blank'>
-          <FaYoutube />
-        </a>
-      ) : (
-        ''
-      )}
-      {project.github ? (
-        <a href={project.github} target='_blank'>
-          <FaGithub />
-        </a>
-      ) : (
-        ''
-      )}
-    </IconsContainer>
-  </Card>
-);
+  project: ProjectTypes;
+}) {
+  return (
+    <Card>
+      <a href={project.demo}>
+        <ImageContainer>
+          <Image src={project.preview} layout='fill' />
+        </ImageContainer>
+      </a>
+      <h4>{project.name}</h4>
+      <p>{project.description}</p>
+      <IconsContainer>
+        {project.demo ? (
+          <a href={project.video} target='_blank'>
+            <FaLaptop />
+          </a>
+        ) : (
+          ''
+        )}
+        {project.video ? (
+          <a href={project.video} target='_blank'>
+            <FaYoutube />
+          </a>
+        ) : (
+          ''
+        )}
+        {project.github ? (
+          <a href={project.github} target='_blank'>
+            <FaGithub />
+          </a>
+        ) : (
+          ''
+        )}
+      </IconsContainer>
+    </Card>
+  );
+}

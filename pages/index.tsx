@@ -5,8 +5,8 @@ import Portfolio from '../components/Portfolio';
 import Career from '../components/Career';
 import Blog from '../components/Blog';
 import Contact from '../components/Contact';
-import { getSortedPostsData } from '../assets/posts';
 import Layout from '../components/shared/Layout';
+import { getSortedPostsData } from '../assets/posts';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();

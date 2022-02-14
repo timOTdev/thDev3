@@ -36,21 +36,25 @@ const TextContainer = styled.div`
   }
 `;
 
-export default () => (
-  <Section>
-    <ImageContainer>
-      <Image priority src='/images/profile.png' layout='fill' />
-    </ImageContainer>
-    <HeaderContainer>
-      <h1>Hello, I'm Tim.</h1>
-      <h4>I craft elegant software using clean code across the full-stack.</h4>
-    </HeaderContainer>
-    <TextContainer>
-      {introduction.map((text, index) => (
-        <div key={index}>
-          <p>{text}</p>
-        </div>
-      ))}
-    </TextContainer>
-  </Section>
-);
+export default function Introduction() {
+  return (
+    <Section>
+      <ImageContainer>
+        <Image priority src='/images/profile.png' layout='fill' />
+      </ImageContainer>
+      <HeaderContainer>
+        <h1>Hello, I'm Tim.</h1>
+        <h4>
+          I craft elegant software using clean code across the full-stack.
+        </h4>
+      </HeaderContainer>
+      <TextContainer>
+        {introduction.map((text, index) => (
+          <div key={index}>
+            <p>{text}</p>
+          </div>
+        ))}
+      </TextContainer>
+    </Section>
+  );
+}

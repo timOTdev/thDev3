@@ -5,35 +5,37 @@ const Section = styled.section`
   h2 {
     text-align: left;
   }
-`;
-const Skills = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  @media (min-width: 320px) {
-    flex-direction: column;
-  }
-  @media (min-width: 768px) {
-    flex-direction: row;
+  div {
+    display: flex;
+    justify-content: space-evenly;
+    @media (min-width: 320px) {
+      flex-direction: column;
+    }
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
   }
 `;
 
-export default () => (
-  <Section>
-    <h2>Skills</h2>
-    <hr />
-    <Skills>
-      {generateSkillColumn('Front-End', skills.frontEnd)}
-      {generateSkillColumn('Back-End', skills.backEnd)}
-      {generateSkillColumn('Other', skills.other)}
-    </Skills>
-  </Section>
-);
+export default function Skills() {
+  const generateSkillColumn = (title: string, skills: Array<string>) => (
+    <div>
+      <h3>{title}</h3>
+      {skills.map((skill, index) => (
+        <p key={index}>{skill}</p>
+      ))}
+    </div>
+  );
 
-const generateSkillColumn = (title: string, skills: Array<string>) => (
-  <div>
-    <h3>{title}</h3>
-    {skills.map((skill, index) => (
-      <p key={index}>{skill}</p>
-    ))}
-  </div>
-);
+  return (
+    <Section>
+      <h2>Skills</h2>
+      <hr />
+      <div>
+        {generateSkillColumn('Front-End', skills.frontEnd)}
+        {generateSkillColumn('Back-End', skills.backEnd)}
+        {generateSkillColumn('Other', skills.other)}
+      </div>
+    </Section>
+  );
+}
