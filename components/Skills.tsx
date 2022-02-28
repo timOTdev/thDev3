@@ -19,12 +19,12 @@ const Section = styled.section`
 
 export default function Skills() {
   const generateSkillColumn = (title: string, skills: Array<string>) => (
-    <div>
+    <article>
       <h3>{title}</h3>
       {skills.map((skill, index) => (
         <p key={index}>{skill}</p>
       ))}
-    </div>
+    </article>
   );
 
   return (

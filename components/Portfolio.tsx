@@ -18,11 +18,13 @@ const Section = styled.section`
 
 export default function Portfolio() {
   const [showSecondary, setShowSecondary] = useState(false);
+
   const makeButton = (text: string) => (
     <button onClick={() => setShowSecondary((prevCheck) => !prevCheck)}>
       {text}
     </button>
   );
+
   return (
     <Section>
       <h2>Portfolio</h2>
