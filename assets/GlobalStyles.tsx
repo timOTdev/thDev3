@@ -59,6 +59,7 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
   body {
     background: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.textColor};
+    font-family: 'Quicksand', sans-serif;
     font-size: 62.5%;
     margin: 0 auto;
     box-sizing: border-box;
