@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Introduction from '../components/Introduction';
 import Skills from '../components/Skills';
 import Portfolio from '../components/Portfolio';
@@ -26,15 +25,6 @@ interface PropTypes {
 export default function Home(props: PropTypes) {
   return (
     <>
-      <Head>
-        <title>Timothy Hoang | Software Engineer</title>
-        <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
-        <link
-          href='https://fonts.googleapis.com/css2?family=Quicksand&display=swap'
-          rel='stylesheet'
-        />
-      </Head>
       <Layout {...props}>
         <Introduction />
         <Skills />

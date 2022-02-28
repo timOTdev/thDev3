@@ -86,28 +86,28 @@ export default function ProjectsTemplate({
     <Card>
       <a href={project.demo}>
         <ImageContainer>
-          <Image src={project.preview} layout='fill' />
+          <Image alt={project.name} src={project.preview} layout='fill' />
         </ImageContainer>
       </a>
       <h4>{project.name}</h4>
       <p>{project.description}</p>
       <IconsContainer>
         {project.demo ? (
-          <a href={project.video} target='_blank'>
+          <a href={project.video} target='_blank' rel='noopener noreferrer'>
             <FaLaptop />
           </a>
         ) : (
           ''
         )}
         {project.video ? (
-          <a href={project.video} target='_blank'>
+          <a href={project.video} target='_blank' rel='noopener noreferrer'>
             <FaYoutube />
           </a>
         ) : (
           ''
         )}
         {project.github ? (
-          <a href={project.github} target='_blank'>
+          <a href={project.github} target='_blank' rel='noopener noreferrer'>
             <FaGithub />
           </a>
         ) : (

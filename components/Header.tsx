@@ -44,6 +44,7 @@ export default function Header({ theme, toggleTheme }: PropTypes) {
           <Link href='/'>
             <a>
               <Image
+                alt='logo_dark'
                 priority
                 src='/images/logo_dark.png'
                 height={200}
@@ -55,6 +56,7 @@ export default function Header({ theme, toggleTheme }: PropTypes) {
           <Link href='/'>
             <a>
               <Image
+                alt='logo_light'
                 priority
                 src='/images/logo_light.png'
                 height={200}

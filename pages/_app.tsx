@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { AppProps } from 'next/app';
+import Head from 'next/head';
 import { GlobalStyles, lightTheme, darkTheme } from '../assets/GlobalStyles';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -20,6 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider theme={theme == 'dark' ? darkTheme : lightTheme}>
+      <Head>
+        <title>Timothy Hoang | Software Engineer</title>
+      </Head>
       <GlobalStyles />
       <Component {...pageProps} {...globals} />
     </ThemeProvider>
