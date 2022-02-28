@@ -18,20 +18,19 @@ const Section = styled.section`
 
 export default function Portfolio() {
   const [showSecondary, setShowSecondary] = useState(false);
+  const makeButton = (text: string) => (
+    <button onClick={() => setShowSecondary((prevCheck) => !prevCheck)}>
+      {text}
+    </button>
+  );
   return (
     <Section>
       <h2>Portfolio</h2>
       <hr />
       <ProjectsPrimary />
-      {showSecondary ? (
-        <button onClick={() => setShowSecondary((prevCheck) => !prevCheck)}>
-          Hide projects
-        </button>
-      ) : (
-        <button onClick={() => setShowSecondary((prevCheck) => !prevCheck)}>
-          More projects
-        </button>
-      )}
+      {showSecondary
+        ? makeButton('Hide projects')
+        : makeButton('More projects')}
       {showSecondary ? <ProjectsSecondary /> : ''}
     </Section>
   );
