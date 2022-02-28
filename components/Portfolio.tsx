@@ -26,7 +26,7 @@ export default function Portfolio() {
   );
 
   return (
-    <Section>
+    <Section id='portfolio'>
       <h2>Portfolio</h2>
       <hr />
       <ProjectsPrimary />

@@ -103,7 +103,7 @@ export default function Contact() {
 
   if (formStatus) {
     return (
-      <Section>
+      <Section id='contact'>
         <h1>Contact</h1>
         <hr />
         <h3>Thanks for your message!</h3>
@@ -111,7 +111,7 @@ export default function Contact() {
     );
   } else {
     return (
-      <Section>
+      <Section id='contact'>
         <h2>Contact</h2>
         <hr />
         <form onSubmit={handleSubmit}>

@@ -47,7 +47,7 @@ export default function Career() {
     ));
 
   return (
-    <Section>
+    <Section id='career'>
       <h2>Career</h2>
       <hr />
       <h3>Timeline</h3>

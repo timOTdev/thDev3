@@ -21,7 +21,7 @@ interface AllPostsDataTypes {
 
 export default function Blog({ allPostsData }: AllPostsDataTypes) {
   return (
-    <Section>
+    <Section id='blog'>
       <h2>Blog</h2>
       <hr />
       <ul>

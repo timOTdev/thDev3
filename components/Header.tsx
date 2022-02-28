@@ -38,7 +38,7 @@ interface PropTypes {
 
 export default function Header({ theme, toggleTheme }: PropTypes) {
   return (
-    <Section>
+    <Section id='header'>
       <Brand>
         {theme == 'dark' ? (
           <Link href='/'>

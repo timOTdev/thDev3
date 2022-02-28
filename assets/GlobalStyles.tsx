@@ -53,6 +53,9 @@ export const lightTheme = {
 };
 
 export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background: ${({ theme }) => theme.backgroundColor};
     color: ${({ theme }) => theme.textColor};
