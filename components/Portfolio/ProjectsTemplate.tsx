@@ -36,10 +36,9 @@ const Card = styled.div`
 const ImageContainer = styled.div`
   position: relative;
   margin: 0 auto;
-  box-shadow: ${({ theme }) => theme.shadowColor};
-  * {
-    border-radius: 3px;
-  }
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
   @media (min-width: 320px) {
     min-height: 150px;
   }
@@ -86,7 +85,12 @@ export default function ProjectsTemplate({
     <Card>
       <a href={project.demo}>
         <ImageContainer>
-          <Image alt={project.name} src={project.preview} layout='fill' />
+          <Image
+            alt={project.name}
+            src={project.preview}
+            layout='fill'
+            objectFit='contain'
+          />
         </ImageContainer>
       </a>
       <h4>{project.name}</h4>
