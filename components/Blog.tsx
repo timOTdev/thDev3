@@ -5,12 +5,18 @@ import Date from '../assets/date';
 const Section = styled.section`
   ul {
     list-style-type: none;
+    margin: 0 auto;
+    width: 35%;
+    text-align: left;
+  }
+  ul p {
+    display: inline;
   }
   h2 {
     text-align: left;
   }
   a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     border-bottom: 2px solid ${({ theme }) => theme.underlineColor};
   }
 `;
@@ -36,13 +42,12 @@ export default function Blog({ allPostsData }: AllPostsDataTypes) {
             title: string;
           }) => (
             <li key={id}>
+              <p>
+                <Date dateString={date} />
+              </p>{' '}
               <Link href={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
-              <br />
-              <p>
-                <Date dateString={date} />
-              </p>
             </li>
           )
         )}

@@ -1,13 +1,13 @@
 export const introduction = [
-  'In my career, I have contributed as a Web Applications Developer, an Associate Full Stack Software Engineer, a Frontend Developer. My personal interests in the software industry are fintech, blockchain, and greentech. I value working with smart & humble people, opportunities to grow, and making impact with my code.',
-  'My formative experiences started with Bloom Institute of Technology (formerly Lambda School) alumnus, a fast-paced 7-month academy with focus on full-stack web development and computer science. Before that, I started my self-taught coding journey and freelanced in January 2017 during my transition away from a full-time pharmacist role.',
-  'Please feel free to reach me on LinkedIn. Thank you for visiting and I hope we can work together!',
+  'In my career, I have held roles as Web Applications Developer, Associate Full Stack Software Engineer, and Frontend Developer. My personal interests in the software industry are fintech, blockchain, and greentech. I value working with smart & humble people, having opportunities to grow, and making impact with my code.',
+  'My formative experiences started with Bloom Institute of Technology (formerly Lambda School), a fast-paced 7-month academy with focus on full-stack web development and computer science. Before that, I started my self-taught coding journey and freelanced in January 2017 during my transition away from a full-time pharmacist role.',
+  'Please feel free to reach me on LinkedIn. Thank you for visiting and I look forward to working together!',
 ];
 
 export const skills = {
   frontEnd: [
     'JavaScript',
-    'React 16.8+',
+    'React',
     'TypeScript',
     'Next.js',
     'Redux',
@@ -17,8 +17,8 @@ export const skills = {
     'HTML',
   ],
   backEnd: [
-    'Node.js',
-    'Express.js',
+    'Node.js/Express',
+    'C#',
     'SQL/PostgreSQL',
     'MongoDB',
     'REST/JS APIs',
@@ -36,7 +36,7 @@ export const skills = {
     'Auth0',
     'Jira',
     'Vietnamese (fluent)',
-    'Spanish (basic)',
+    'Spanish (intermediate)',
   ],
 };
 
@@ -216,8 +216,8 @@ export const projectsSecondary = [
 
 export const timeline = {
   years: [
-    '2020-2022',
     '2020-Present',
+    '2020-2022',
     '2019',
     '2019',
     '2019',
@@ -226,8 +226,8 @@ export const timeline = {
     '2011-Present',
   ],
   experiences: [
-    'Web Applications Developer at OpenSymmetry, a global SPM company',
     'Executive Member at Austin Hispanic Hackers, a technology diversity group',
+    'Web Applications Developer at OpenSymmetry, a global SPM company',
     'Associate Full-Stack Software Engineer at Tenavox, a commercial real estate startup',
     'Core Developer during Lambda School Labs with Refreshr project',
     'Project Scrummaster during Lambda School Build Week with Guidr project',

@@ -56,7 +56,7 @@ const ImageContainer = styled.div`
     min-height: 180px;
   }
   @media (min-width: 1440px) {
-    min-height: 240px;
+    min-height: 220px;
   }
 `;
 const IconsContainer = styled.div`

@@ -50,7 +50,6 @@ export default function Career() {
     <Section id='career'>
       <h2>Career</h2>
       <hr />
-      <h3>Timeline</h3>
       <table>
         <tbody>{generateTimeline()}</tbody>
       </table>
