@@ -42,9 +42,17 @@ export const skills = {
 
 export const projectsPrimary = [
   {
+    name: 'Ragnarok Wallet',
+    description:
+      'A Solana wallet working with blockchain data layer hosted by Datahub. Allows sending and receiving tokens, view blockchain wallet history, and market data by CoinGecko. Technology stack: React, Typescript, solana/web3.js, Datahub, CoinGecko API, Github Pages, Styled Components.',
+    preview: '/images/ragnarokWallet.png',
+    demo: 'https://timotdev.github.io/ragnarok_wallet/',
+    github: 'https://github.com/timOTdev/ragnarok_wallet',
+  },
+  {
     name: 'Tenavox Admin',
     description:
-      'An internal-facing admin app for the management of real estate properties from brokers. Worked as a core developer with a lead developer and product owners employing agile methodologies and git workflow. The technology stack includes NextJS, ReactJS, NodeJS, PostGresQL, AWS, Docker, CircleCI, Auth0.',
+      'An internal-facing admin app for the management of real estate properties from brokers. Worked as a core developer with a lead developer and product owners employing agile methodologies and git workflow. The technology stack includes NextJS, ReactJS, NodeJS, PostgresQL, AWS, Docker, CircleCI, Auth0.',
     preview: '/images/tenavoxAdmin.png',
     demo: 'https://admin-v2.tenavox.com',
     video: 'https://www.youtube.com/watch?v=ihciDpboFTo',
@@ -71,101 +79,101 @@ export const projectsPrimary = [
   {
     name: 'Dulles Barber',
     description:
-      'This site is home for an actual barber shop business based in Sterling, Virginia. Serves as an online business hub for store information, announcements, and digital contact. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
+      'A home website for an actual barber shop business based in Sterling, Virginia. Serves as an online business hub for store information, announcements, and contact. Worked with owners and manager to tailor website to requirements. The technology stack includes GatsbyJS, GraphQL, and Styled Components.',
     preview: '/images/dullesBarber.png',
     demo: 'http://dullesbarber.com/',
-    github: 'https://github.com/timh1203/dullesBarber',
+    github: 'https://dullesbarber.com/',
   },
+];
+
+export const projectsSecondary = [
   {
     name: 'Derik Jones Architect',
     description:
       "An architect portfolio website built for a client. Showcases the client's professional designs, projects, and inspirational photos. The technology stack includes GatsbyJS, GraphQL, and Styled Components.",
     preview: '/images/derikJones.png',
     demo: 'http://derikjones.com/',
-    github: 'https://github.com/timh1203/derikjones',
+    github: 'https://github.com/timOTdev/derikjones',
   },
-];
-
-export const projectsSecondary = [
   {
     name: 'Wanderlustoria',
     description:
-      'A travel content sharing app made for travelers to share pictures from their travel journey. Ability to interact through profile creation, uploading photos, and comment system. The technology stack includes NodeJS, ExpressJS, and MongoDB. APIs includes PassportJS, Cloudinary, and Google Geocoder.',
+      'A travel content sharing app made for travelers to share pictures from their travel journey. The technology stack includes NodeJS, ExpressJS, and MongoDB. APIs includes PassportJS, Cloudinary, and Google Geocoder.',
     preview: '/images/wanderlustoria.png',
     demo: 'https://wanderlustoria.herokuapp.com/',
-    github: 'https://github.com/timh1203/wanderlustoria',
+    github: 'https://github.com/timOTdev/wanderlustoria',
   },
   {
     name: 'Tic Tac Toe',
     description:
       'A well-known game for the Free Code Camp curriculum. This game is playable against AI (MiniMax algorithm) or another player. The technology used was ReactJS.',
     preview: '/images/ticTacToeGame.png',
-    demo: 'https://timh1203.github.io/tictactoe-game',
-    github: 'https://github.com/timh1203/tictactoe-game',
+    demo: 'https://timOTdev.github.io/tictactoe-game',
+    github: 'https://github.com/timOTdev/tictactoe-game',
   },
   {
     name: 'Simon Game',
     description:
       'A memory sequence game for the Free Code Camp curriculum with instrument sounds and a keyboard play option. The technology used was ReactJS.',
     preview: '/images/simonGame.png',
-    demo: 'https://timh1203.github.io/simon-game',
-    github: 'https://github.com/timh1203/simon-game',
+    demo: 'https://timOTdev.github.io/simon-game',
+    github: 'https://github.com/timOTdev/simon-game',
   },
   {
     name: 'Calculator App',
     description:
       'A simple calculator app to perform basic math operations for the Free Code Camp curriculum. The technology used was javascript.',
     preview: '/images/calculatorApp.png',
-    demo: 'https://timh1203.github.io/calculator-app',
-    github: 'https://github.com/timh1203/calculator-app',
+    demo: 'https://timOTdev.github.io/calculator-app',
+    github: 'https://github.com/timOTdev/calculator-app',
   },
   {
     name: 'Remarkable Respondez App',
     description:
       'A custom event app built for the Free Code Camp Group. The technology stack includes ReactJS and FireBase.',
     preview: '/images/respondezApp.png',
-    demo: 'https://timh1203.github.io/respondez-app',
-    github: 'https://github.com/timh1203/respondez-app',
+    demo: 'https://timOTdev.github.io/respondez-app',
+    github: 'https://github.com/timOTdev/respondez-app',
   },
   {
     name: 'Phenomenal Pomodoro App',
     description:
       'The work/break cycle app based on the Pomodoro Technique by by Francesco Cirillo. The app was for the Free Code Camp curriculum. The technology used was javascript.',
     preview: '/images/pomodoroApp.png',
-    demo: 'https://timh1203.github.io/pomodoro-app',
-    github: 'https://github.com/timh1203/pomodoro-app',
+    demo: 'https://timOTdev.github.io/pomodoro-app',
+    github: 'https://github.com/timOTdev/pomodoro-app',
   },
   {
     name: 'Terrific Twitch App',
     description:
       'A Twitch app displaying the channels streaming status from the Twitch API. The technology stack includes ReactJS and FireBase.',
     preview: '/images/twitchApp.png',
-    demo: 'https://timh1203.github.io/twitch-app',
-    github: 'https://github.com/timh1203/twitch-app',
+    demo: 'https://timOTdev.github.io/twitch-app',
+    github: 'https://github.com/timOTdev/twitch-app',
   },
   {
     name: 'Witty Wikipedia App',
     description:
       'A wikipedia app that displays a user search results or a random article from the WikiMedia API. The technology used was javascript.',
     preview: '/images/wikipediaApp.png',
-    demo: 'https://timh1203.github.io/wikipedia-app',
-    github: 'https://github.com/timh1203/wikipedia-app',
+    demo: 'https://timOTdev.github.io/wikipedia-app',
+    github: 'https://github.com/timOTdev/wikipedia-app',
   },
   {
     name: 'Wonderful Weather App',
     description:
       "A weather app that displays the weather forecast (24 hours, 48 hours, and 1 week) based on the user's IP location. The technologies used were javascript, Dark Sky API, and Skycons.",
     preview: '/images/weatherApp.png',
-    demo: 'https://timh1203.github.io/weather-app',
-    github: 'https://github.com/timh1203/weather-app',
+    demo: 'https://timOTdev.github.io/weather-app',
+    github: 'https://github.com/timOTdev/weather-app',
   },
   {
     name: 'Photography Website',
     description:
       'A photography website that uses an API to pull pictures from instagram. The technologies used were javascript, Materialize, and InstafeedJS.',
     preview: '/images/photographySite.png',
-    demo: 'https://timh1203.github.io/photo-site',
-    github: 'https://github.com/timh1203/photo-site',
+    demo: 'https://timOTdev.github.io/photo-site',
+    github: 'https://github.com/timOTdev/photo-site',
   },
   {
     name: 'Turtle Dash Chrome Extension',
@@ -180,16 +188,16 @@ export const projectsSecondary = [
     description:
       'A random quote generator with randoms quotes from an API with the ability to share on Twitter and Facebook. The technologies used were javascript and jQuery.',
     preview: '/images/quoteMachine.png',
-    demo: 'https://timh1203.github.io/quote-machine',
-    github: 'https://github.com/timh1203/quote-machine',
+    demo: 'https://timOTdev.github.io/quote-machine',
+    github: 'https://github.com/timOTdev/quote-machine',
   },
   {
     name: "Traveler's Checklist",
     description:
       'An app for the travler to make a packing list before a big trip. The technologies used were javascript and jQuery.',
     preview: '/images/travelersChecklist.png',
-    demo: 'https://timh1203.github.io/traveler-checklist',
-    github: 'https://github.com/timh1203/traveler-checklist',
+    demo: 'https://timOTdev.github.io/traveler-checklist',
+    github: 'https://github.com/timOTdev/traveler-checklist',
   },
   {
     name: 'Sightsee With Me',
@@ -254,7 +262,7 @@ export const accolades = [
 
 export const links = {
   github: {
-    url: 'https://github.com/timh1203',
+    url: 'https://github.com/timOTdev',
     alt: 'My Github',
   },
   linkedIn: {
