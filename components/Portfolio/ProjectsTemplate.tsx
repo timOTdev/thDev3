@@ -6,6 +6,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-content: space-between;
   border: 2px solid ${({ theme }) => theme.textColor};
   border-radius: 3px;
   padding: 1rem;
@@ -25,7 +26,7 @@ const Card = styled.div`
     }
   }
   @media (min-width: 1024px) {
-    max-width: 28%;
+    max-width: 25%;
     margin: 0.5rem;
   }
   @media (min-width: 2568px) {
@@ -83,6 +84,7 @@ export default function ProjectsTemplate({
 }) {
   return (
     <Card>
+      <h4>{project.name}</h4>
       <a href={project.demo}>
         <ImageContainer>
           <Image
@@ -93,7 +95,6 @@ export default function ProjectsTemplate({
           />
         </ImageContainer>
       </a>
-      <h4>{project.name}</h4>
       <p>{project.description}</p>
       <IconsContainer>
         {project.demo ? (

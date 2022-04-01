@@ -28,7 +28,7 @@ export default function Skills() {
   );
 
   return (
-    <Section>
+    <Section id='skills'>
       <h2>Skills</h2>
       <hr />
       <div>

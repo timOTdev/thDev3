@@ -70,12 +70,9 @@ export default function Header({ theme, toggleTheme }: PropTypes) {
       <Navigation>
         <Link href='#portfolio'>Portfolio</Link>
         <Link href='#career'>Career</Link>
+        <Link href='#skills'>Skills</Link>
         <Link href='#blog'>Blog</Link>
-        <a href={links.resume.url} target='_blank' rel='noopener noreferrer'>
-          Resume
-        </a>
         <Link href='#contact'>Contact</Link>
-
         <button onClick={() => toggleTheme(theme)}>
           {theme == 'dark' ? <span>☀️</span> : <span>🌙</span>}
         </button>

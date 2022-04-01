@@ -27,9 +27,9 @@ export default function Home(props: PropTypes) {
     <>
       <Layout {...props}>
         <Introduction />
-        <Skills />
         <Portfolio />
         <Career />
+        <Skills />
         <Blog allPostsData={props.allPostsData} />
         <Contact />
       </Layout>
