@@ -18,13 +18,13 @@ export const skills = {
   ],
   backEnd: [
     'Node.js/Express',
-    'C#',
     'SQL/PostgreSQL',
-    'MongoDB',
     'REST/JS APIs',
-    'PHP',
     'Vercel/Netlify/Heroku',
     'Python/Django',
+    'C#',
+    'MongoDB',
+    'PHP',
     'C',
   ],
   other: [

@@ -98,7 +98,7 @@ export default function ProjectsTemplate({
       <p>{project.description}</p>
       <IconsContainer>
         {project.demo ? (
-          <a href={project.video} target='_blank' rel='noopener noreferrer'>
+          <a href={project.demo} target='_blank' rel='noopener noreferrer'>
             <FaLaptop />
           </a>
         ) : (
