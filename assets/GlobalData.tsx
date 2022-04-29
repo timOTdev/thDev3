@@ -50,6 +50,14 @@ export const projectsPrimary = [
     github: 'https://github.com/timOTdev/ragnarok_wallet',
   },
   {
+    name: 'Hispanic Hackers Volunteer Organization',
+    description:
+      'A central hub for my organization where I serve as an executive member. The organization supports tech diversity by hosting regular monthly events as well as social events and having an online slack channel where members can engage. Technology stack: Nextjs, React, Styled Components.',
+    preview: '/images/hispanicHackers.png',
+    demo: 'https://www.hispanichackers.com/',
+    github: 'https://github.com/timOTdev/hispanichackersnext',
+  },
+  {
     name: 'Tenavox Admin',
     description:
       'An internal-facing admin app for the management of real estate properties from brokers. Worked as a core developer with a lead developer and product owners employing agile methodologies and git workflow. The technology stack includes NextJS, ReactJS, NodeJS, PostgresQL, AWS, Docker, CircleCI, Auth0.',
@@ -76,6 +84,9 @@ export const projectsPrimary = [
     video: 'https://youtu.be/0C2toPa9GHM',
     github: 'https://github.com/guidr-app-lion-team',
   },
+];
+
+export const projectsSecondary = [
   {
     name: 'Dulles Barber',
     description:
@@ -84,9 +95,6 @@ export const projectsPrimary = [
     demo: 'http://dullesbarber.com/',
     github: 'https://dullesbarber.com/',
   },
-];
-
-export const projectsSecondary = [
   {
     name: 'Derik Jones Architect',
     description:
