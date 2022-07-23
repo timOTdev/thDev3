@@ -48,7 +48,7 @@ export default function Introduction() {
         />
       </ImageContainer>
       <HeaderContainer>
-        <h1>Hello, I&apos;m Tim.</h1>
+        <h1>Hello, I'm Tim.</h1>
         <h4>
           I'm a Frontend Engineer at MadHive.
         </h4>

@@ -18,13 +18,13 @@ const Div = styled.div`
 export default function Socials() {
   return (
     <Div>
-      <a href={links.github.url} target='_blank' rel='noopener noreferrer'>
+      <a href={links.github.href} target='_blank' rel='noopener noreferrer'>
         <FaGithub />
       </a>
-      <a href={links.linkedIn.url} target='_blank' rel='noopener noreferrer'>
+      <a href={links.linkedIn.href} target='_blank' rel='noopener noreferrer'>
         <FaLinkedinIn />
       </a>
-      <a href={links.twitter.url} target='_blank' rel='noopener noreferrer'>
+      <a href={links.twitter.href} target='_blank' rel='noopener noreferrer'>
         <FaTwitter />
       </a>
     </Div>
