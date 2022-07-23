@@ -1,8 +1,16 @@
+// ============================================================
+// Introduction (components/Introduction.tsx)
+// ============================================================
+
 export const introduction = [
   'In my career, I have held roles as Web Applications Developer, Associate Full Stack Software Engineer, and Frontend Developer. My personal interests in the software industry are fintech, blockchain, and greentech. I value working with smart & humble people, having opportunities to grow, and making impact with my code.',
   'My formative experiences started with Bloom Institute of Technology (formerly Lambda School), a fast-paced 7-month academy with focus on full-stack web development and computer science. Before that, I started my self-taught coding journey and freelanced in January 2017 during my transition away from a full-time pharmacist role.',
   'Please feel free to reach me on LinkedIn. Thank you for visiting and I look forward to working together!',
 ];
+
+// ============================================================
+// Skills (components/Skills.tsx)
+// ============================================================
 
 export const skills = {
   frontEnd: [
@@ -40,6 +48,10 @@ export const skills = {
   ],
 };
 
+// ============================================================
+// Primary Projects (components/Portfolio/ProjectsPrimary.tsx)
+// ============================================================
+
 export const projectsPrimary = [
   {
     name: 'Ragnarok Wallet',
@@ -50,7 +62,7 @@ export const projectsPrimary = [
     github: 'https://github.com/timOTdev/ragnarok_wallet',
   },
   {
-    name: 'Hispanic Hackers Volunteer Organization',
+    name: 'Hispanic Hackers',
     description:
       'A central hub for my organization where I serve as an executive member. The organization supports tech diversity by hosting regular monthly events as well as social events and having an online slack channel where members can engage. Technology stack: Nextjs, React, Styled Components.',
     preview: '/images/hispanicHackers.png',
@@ -60,7 +72,7 @@ export const projectsPrimary = [
   {
     name: 'Tenavox Admin',
     description:
-      'An internal-facing admin app for the management of real estate properties from brokers. Worked as a core developer with a lead developer and product owners employing agile methodologies and git workflow. The technology stack includes NextJS, ReactJS, NodeJS, PostgresQL, AWS, Docker, CircleCI, Auth0.',
+      'An internal-facing admin app for the management of real estate properties from brokers. Worked as a core developer with a lead developer and product owners employing agile methodologies and git workflow. Technology stack: NextJS, ReactJS, NodeJS, PostgresQL, AWS, Docker, CircleCI, Auth0.',
     preview: '/images/tenavoxAdmin.png',
     demo: 'https://admin-v2.tenavox.com',
     video: 'https://www.youtube.com/watch?v=ihciDpboFTo',
@@ -69,7 +81,7 @@ export const projectsPrimary = [
   {
     name: 'Refreshr',
     description:
-      'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 full stack developers deploying agile methodologies and git workflow. The technology stack includes ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
+      'A spaced-repetition review app to send out learning snippets for students from the teacher. Worked as a core developer with 4 full stack developers deploying agile methodologies and git workflow. Technology stack: ReactJS, NodeJS, PostGresQL, SendGrid, and TypeForm.',
     preview: '/images/refreshr.png',
     demo: 'https://refreshr-app.netlify.com/',
     video: 'https://youtu.be/u89p3RqXqZM',
@@ -78,13 +90,17 @@ export const projectsPrimary = [
   {
     name: 'Guidr',
     description:
-      'A trip logging app to help backcountry guides of all types log their private or professional adventures. Led as ScrumMaster for 5 developers of various skill levels, coordinated team goals to build the application, committed code, and assisted in debugging. The technology stack includes ReactJS, Redux, NodeJS, and Sqlite3.',
+      'A trip logging app to help backcountry guides of all types log their private or professional adventures. Led as ScrumMaster for 5 developers of various skill levels, coordinated team goals to build the application, committed code, and assisted in debugging. Technology stack: ReactJS, Redux, NodeJS, and Sqlite3.',
     preview: '/images/guidr.png',
     demo: 'https://guidr2.netlify.com/',
     video: 'https://youtu.be/0C2toPa9GHM',
     github: 'https://github.com/guidr-app-lion-team',
   },
 ];
+
+// ============================================================
+// Secondary Projects (components/Portfolio/Projectsecondary.tsx)
+// ============================================================
 
 export const projectsSecondary = [
   {
@@ -230,28 +246,9 @@ export const projectsSecondary = [
   },
 ];
 
-export const timeline = {
-  years: [
-    '2020-Present',
-    '2020-2022',
-    '2019',
-    '2019',
-    '2019',
-    '2018',
-    '2018',
-    '2011-Present',
-  ],
-  experiences: [
-    'Executive Member at Austin Hispanic Hackers, a technology diversity group',
-    'Web Applications Developer at OpenSymmetry, a global SPM company',
-    'Associate Full-Stack Software Engineer at Tenavox, a commercial real estate startup',
-    'Core Developer during Lambda School Labs with Refreshr project',
-    'Project Scrummaster during Lambda School Build Week with Guidr project',
-    'Web Designer with various clients: Derik Jones, VZ Suites, Sightsee With Me',
-    'Local Leader with Free Code Camp coding group',
-    'Technology Manager a Dulles barber, a salon business in Northern Virginia',
-  ],
-};
+// ============================================================
+// Accolades (components/Career.tsx)
+// ============================================================
 
 export const accolades = [
   {
@@ -268,92 +265,133 @@ export const accolades = [
   },
 ];
 
+// ============================================================
+// Links (components/shared/Socials.tsx)
+// ============================================================
+
 export const links = {
   github: {
-    url: 'https://github.com/timOTdev',
+    href: 'https://github.com/timOTdev',
     alt: 'My Github',
   },
   linkedIn: {
-    url: 'https://www.linkedin.com/in/timothyhoang',
+    href: 'https://www.linkedin.com/in/timothyhoang',
     alt: 'My LinkedIn',
   },
   twitter: {
-    url: 'https://twitter.com/timothyhoangdev',
+    href: 'https://twitter.com/timOTdev',
     alt: 'My Twitter',
   },
   youtube: {
-    url: 'https://www.youtube.com/channel/UC20f70HjfOSYUk725xid1XQ',
+    href: 'https://www.youtube.com/channel/UC20f70HjfOSYUk725xid1XQ',
     alt: 'My Youtube',
   },
   medium: {
-    url: 'https://medium.com/@timh1203',
+    href: 'https://medium.com/@timh1203',
     alt: 'My Medium',
   },
   freeCodeCamp: {
-    url: 'https://www.freecodecamp.org/timh1203',
+    href: 'https://www.freecodecamp.org/timh1203',
     alt: 'My Free Code Camp',
   },
   lambdaSchool: {
-    url: 'https://lambdaschool.com',
+    href: 'https://lambdaschool.com',
     alt: 'Lambda School Home',
   },
   chingu: {
-    url: 'https://chingu.io',
+    href: 'https://chingu.io',
     alt: 'Chingu Home',
   },
   fccAshburn: {
-    url: 'https://free-code-camp-ashburn.github.io/website',
+    href: 'https://free-code-camp-ashburn.github.io/website',
     alt: 'Free Code Camp Ashburn Home',
   },
   resume: {
-    url: 'https://resume.creddle.io/resume/9f4autrrf1v',
+    href: 'https://resume.creddle.io/resume/9f4autrrf1v',
     alt: 'My Online Resume',
   },
   tenavoxAdmin: {
-    url: 'https://admin-v2.tenavox.com',
-    alt: 'Tenavox Admid App Login',
+    href: 'https://admin-v2.tenavox.com',
+    alt: 'Tenavox Admin App Login',
     video: 'https://youtu.be/o4Kd1pOrdlI',
   },
   refreshr: {
-    url: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
+    href: 'https://github.com/Lambda-School-Labs/labs10-student-follow',
     alt: 'Refreshr App Github Repository',
     video: 'https://youtu.be/u89p3RqXqZM',
   },
   guidr: {
-    url: 'https://github.com/guidr-app-lion-team',
+    href: 'https://github.com/guidr-app-lion-team',
     alt: 'Guidr App Github Organization',
     video: 'https://youtu.be/0C2toPa9GHM',
   },
   dullesBarber: {
-    url: 'http://dullesbarber.com',
-    alt: 'Dulles Barber Barber Client',
+    href: 'http://dullesbarber.com',
+    alt: 'Dulles Barber Barber',
   },
   derikJones: {
-    url: 'http://derikjones.com',
-    alt: 'Derik Jones Architect Client',
+    href: 'http://derikjones.com',
+    alt: 'Derik Jones Architect',
   },
   vzSuites: {
-    url: 'http://vzsuites.com',
-    alt: 'VZ Suites Rental Client',
+    href: 'http://vzsuites.com',
+    alt: 'VZ Suites Rental',
   },
   sightsee: {
-    url: 'http://www.sightseewithme.com',
-    alt: 'Sightsee With Me Tour Client',
+    href: 'http://www.sightseewithme.com',
+    alt: 'Sightsee With Me Tour',
   },
   tenavox: {
-    url: 'https://www.linkedin.com/company/tenavox/',
+    href: 'https://www.linkedin.com/company/tenavox/',
     alt: 'Commercial Real Estate Startup',
   },
-  opensymmetry: {
-    url: 'https://www.opensymmetry.com/',
+  openSymmetry: {
+    href: 'https://www.opensymmetry.com/',
     alt: 'Global SPM Company',
   },
-  plutuspioneerprogram: {
-    url: 'https://developers.cardano.org/en/plutus-pioneer-program/',
-    alt: 'Plutus Pioneer Program',
+  madHive: {
+    href: 'https://www.madhive.com/',
+    alt: 'Madhive Home'
   },
-  hispanichackers: {
-    url: 'https://www.hispanichackers.com/',
-    alt: 'Austin Hispanic Hackers',
+  hispanicHackers: {
+    href: 'https://www.hispanichackers.com/',
+    alt: 'Volunteer Tech Organization'
   },
+  lambdaSchoolLabs: {
+    href: 'https://www.youtube.com/watch?v=GDwwTLpegW4',
+    alt: 'Lambda School Labs (AKA BloomTech)'
+  },
+  freeCodeCampAshburn: {
+    href: 'https://free-code-camp-ashburn.github.io/website/',
+    alt: 'FreeCodeCamp Ashburn'
+  },
+};
+
+// ============================================================
+// Timeline (components/Career.tsx)
+// ============================================================
+
+export const timeline = {
+  years: [
+    '2022-Present',
+    '2020-Present',
+    '2020-2022',
+    '2019',
+    '2019',
+    '2019',
+    '2018',
+    '2018',
+    '2011-Present',
+  ],
+  experiences: [
+    `Frontend Engineer at <a href=${links.madHive.href} alt=${links.madHive.alt}>Madhive</a>, an end-to-end AdTech company`,
+    `Executive Member at <a href=${links.hispanicHackers.href} alt=${links.hispanicHackers.alt}>Austin Hispanic Hackers</a>, a technology diversity group`,
+    `Web Applications Developer at <a href=${links.openSymmetry.href} alt=${links.openSymmetry.href}>OpenSymmetry</a>, a global SPM company`,
+    `Associate Full-Stack Software Engineer at <a href=${links.tenavox.href} alt=${links.tenavox.href}>Tenavox</a>, a commercial real estate startup`,
+    `Core Developer during <a href=${links.lambdaSchoolLabs.href} alt=${links.lambdaSchoolLabs.href}>Lambda School Labs</a> with Refreshr project`,
+    `Project Scrummaster during <a href=${links.lambdaSchoolLabs.href} alt=${links.lambdaSchoolLabs.href}>Lambda School Build Week</a> with Guidr project`,
+    `Web Designer with various clients: Derik Jones, VZ Suites, Sightsee With Me`,
+    `Local Leader with <a href=${links.freeCodeCampAshburn.href} alt=${links.freeCodeCampAshburn.href}>Free Code Camp Ashburn</a> coding group`,
+    `Web Designer at <a href=${links.dullesBarber.href} alt=${links.dullesBarber.alt}>Dulles Barber</a>, a salon business in Northern Virginia`,
+  ],
 };

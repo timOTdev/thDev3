@@ -12,6 +12,13 @@ const Section = styled.section`
     td {
       padding: 0.5rem 1.5rem;
     }
+    td > a {
+      font-size: 1.2rem;
+      border-bottom: 1px solid white;
+    }
+    td > a:hover {
+      border-bottom: 1px solid ${({ theme }) => theme.underlineColor};
+    }
     @media (min-width: 2560px) {
       th,
       td {
@@ -30,7 +37,7 @@ export default function Career() {
     timeline.years.map((item, index) => (
       <tr key={index}>
         <th>{item}</th>
-        <td>{timeline.experiences[index]}</td>
+        <td dangerouslySetInnerHTML={{ __html: timeline.experiences[index] }} />
       </tr>
     ));
 

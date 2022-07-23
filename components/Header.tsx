@@ -2,7 +2,6 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import Image from 'next/image';
 import Socials from './shared/Socials';
-import { links } from '../assets/GlobalData';
 
 const Section = styled.section`
   margin: 0 auto;

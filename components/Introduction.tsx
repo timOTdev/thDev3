@@ -50,7 +50,7 @@ export default function Introduction() {
       <HeaderContainer>
         <h1>Hello, I&apos;m Tim.</h1>
         <h4>
-          I craft elegant software using clean code across the full-stack.
+          I'm a Frontend Engineer at MadHive.
         </h4>
       </HeaderContainer>
       <TextContainer>
